@@ -1,0 +1,97 @@
+//3 units for long pulse (dah)
+//1 unit for short pulse (dit)
+//.-.. ..- -.-
+//dit dah dit dit (3 second pause) dit dit dah (3 second pause) dah dit dah
+
+int led2 = D7;
+int button = D4;
+int buttonstate = 0;
+
+void setup() {
+    
+  pinMode(led2, OUTPUT);
+  pinMode(button, INPUT_PULLUP);
+
+
+}
+
+void loop() {
+    
+    buttonstate = digitalRead(button);
+    if (buttonstate = HIGH){
+        
+      digitalWrite(led2, HIGH); //on
+      delay(1000);
+
+      digitalWrite(led2, LOW); //off
+      delay(1000);
+  
+      digitalWrite(led2, HIGH); //on
+      delay(3000);
+   
+      digitalWrite(led2, LOW); //off
+      delay(1000);
+  
+      digitalWrite(led2, HIGH); //on
+      delay(1000);
+  
+      digitalWrite(led2, LOW); //off
+      delay(1000);
+  
+      digitalWrite(led2, HIGH); //on
+      delay(1000);
+
+      digitalWrite(led2, LOW); //off
+      delay(3000);
+
+
+//   U
+
+      digitalWrite(led2, HIGH); //on
+      delay(1000);
+  
+      digitalWrite(led2, LOW); //off
+      delay(1000);
+  
+      digitalWrite(led2, HIGH); //on
+      delay(1000);
+
+      digitalWrite(led2, LOW); //off
+      delay(1000);
+  
+      digitalWrite(led2, HIGH); //on
+      delay(3000);
+
+      digitalWrite(led2, LOW); //off
+      delay(3000);
+  
+  
+  
+//   K
+
+      digitalWrite(led2, HIGH); //on
+      delay(3000);
+  
+      digitalWrite(led2, LOW); //off
+      delay(1000);
+  
+      digitalWrite(led2, HIGH); //on
+      delay(1000);
+
+      digitalWrite(led2, LOW); //off
+      delay(1000);
+  
+      digitalWrite(led2, HIGH); //on
+      delay(3000);
+
+      digitalWrite(led2, LOW); //off
+      delay(3000);        
+        
+    }    
+    
+//  L
+
+
+
+
+}
